@@ -1,3 +1,4 @@
+"use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
         extendStatics = Object.setPrototypeOf ||
@@ -11,6 +12,7 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
+console.log("hola");
 var nombreLara;
 nombreLara = 'Lara';
 var Animal = /** @class */ (function () {
@@ -59,7 +61,10 @@ var MisMascotas = /** @class */ (function (_super) {
     MisMascotas.prototype.getNombre = function () {
         return this.nombre;
     };
+    MisMascotas.prototype.setNombre = function (nombre) {
+        this.nombre = nombre;
+    };
     return MisMascotas;
 }(Animal));
 var mascota1 = new MisMascotas('Siamés', 'Gato', 6, 'Felipe');
-console.log(mascota1.getNombre);
+console.log(mascota1.getNombre());

@@ -1,3 +1,4 @@
+console.log("hola");
 type nombre = string;
 let nombreLara: nombre;
 nombreLara = 'Lara';
@@ -63,8 +64,12 @@ class MisMascotas extends Animal {
     getNombre() {
         return this.nombre;
     }
+
+    setNombre(nombre:string){
+        this.nombre=nombre;
+    }
 }
 
 const mascota1: MisMascotas = new MisMascotas('Siamés', 'Gato', 6, 'Felipe');
 
-console.log(mascota1.getNombre.toString());
+console.log(mascota1.getNombre());
